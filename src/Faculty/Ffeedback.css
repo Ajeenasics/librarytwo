@@ -1,0 +1,54 @@
+body{
+    background-image: url('../Assets/s1.jpg')
+    }
+.Ffeedbkborder{
+    border: 2px solid black;
+    width: 400px;
+    height: 550px;
+    text-align: center;
+    margin-left: 35%;
+    margin-top: 4%;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    border-radius: 10px;
+     }
+.Ffeedbkbut
+{
+    width: 250px;
+    height: 30px;
+    border-radius: 70px;
+}
+.Ffeedbkbut:hover
+{
+background-color: red;
+}
+.Ffeedbkinp
+{
+    width: 250px;
+    border:none;
+    border-bottom: 2px solid rgb(252, 252, 252);
+    background-color: transparent;
+    color: white;
+}
+.Ffeedbkhead
+{
+    margin-top: 5%;
+font-size: 20px;
+}
+.Ffeedbkpara1
+{
+    font-size: 18px;
+}
+.Ffeedbkpara2
+{
+    font-size: 14px;
+}
+.Ffeedbkarea{
+    height: 200px;
+    width: 250px;
+    border:none;
+    border: 2px solid rgb(252, 252, 252);
+    background-color: transparent;
+    color: white;
+}

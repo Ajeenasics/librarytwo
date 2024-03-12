@@ -1,0 +1,43 @@
+body{
+    background-image: url('../Assets/s1.jpg')
+    }
+.slogborder{
+    border: 2px solid black;
+    width: 350px;
+    height: 400px;
+    text-align: center;
+    margin-left: 35%;
+    margin-top: 10%;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    border-radius: 10px;
+     }
+.slogbut
+{
+    width: 250px;
+    height: 30px;
+    border-radius: 70px;
+}
+.sloginp
+{
+    width: 250px;
+    border:none;
+    border-bottom: 2px solid rgb(252, 252, 252);
+    background-color: transparent;
+    color: white;
+    margin-top: 6%;
+}
+.sloghead
+{
+font-size: 28px;
+margin-top: 10%;
+}
+.slogpara1
+{
+    font-size: 18px;
+}
+.slogpara2
+{
+    font-size: 14px;
+}
