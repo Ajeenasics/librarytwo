@@ -1,0 +1,36 @@
+body
+{
+    background-image:url('../Assets/s1.jpg');
+}
+.Ffineborder
+{
+    border :22px solid black;
+    width: 90%;
+    height: 45%;
+    margin-left: 5%;
+    margin-top: 5%;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+}
+.Ffinehead
+{
+    text-align: center;
+}
+.Ffineside
+{
+    margin-top: 8%;
+    margin-left: 3%;
+}
+.box
+{
+    margin-left: 5%;
+}
+.boxs
+{
+    margin-left: 7%;
+}
+.boxes
+{
+    margin-left: 1.4%;
+}

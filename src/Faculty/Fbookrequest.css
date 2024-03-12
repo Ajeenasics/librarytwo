@@ -1,0 +1,46 @@
+body{
+    background-image: url('../Assets/s1.jpg')
+    }
+.Fbookreqborder{
+    border: 2px solid black;
+    width: 400px;
+    height: 450px;
+    text-align: center;
+    margin-left: 35%;
+    margin-top: 5%;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    border-radius: 10px;
+     }
+.Fbookreqbut
+{
+    width: 250px;
+    height: 30px;
+    border-radius: 70px;
+}
+.Fbookreqbut:hover
+{
+background-color: red;
+}
+.Fbookreqinp
+{
+    width: 250px;
+    border:none;
+    border-bottom: 2px solid rgb(252, 252, 252);
+    background-color: transparent;
+    color: white;
+}
+.Fbookreqhead
+{
+    margin-top: 4%;
+font-size: 20px;
+}
+.Fbookreqpara1
+{
+    font-size: 18px;
+}
+.Fbookreqpara2
+{
+    font-size: 14px;
+}

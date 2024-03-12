@@ -1,14 +1,23 @@
-import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import UserRegister from "./Component/UserRegister";
+import logo from './logo.svg';
+import './App.css';
+import Slogin from './Student/Slogin'
+import Sregister from './Student/Sregister';
+import Fbookrequest from './Faculty/Fbookrequest';
+import Ffeedback from './Faculty/Ffeedback';
+import Ffine from './Faculty/Ffine';
+import Staffaddbook from './Staff/Staffaddbook';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element=<UserRegister /> />
-      </Routes>
-    </BrowserRouter>
+    <div>
+      <Fbookrequest/>
+      {/* <Slogin/> */}
+      {/* <Sregister/> */}
+      {/* <Ffeedback/> */}
+      {/* <Ffine/> */}
+      {/* <Staffaddbook/> */}
+  
+    </div>
   );
 }
 

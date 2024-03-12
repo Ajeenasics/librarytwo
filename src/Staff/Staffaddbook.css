@@ -1,0 +1,56 @@
+body{
+    background-image: url('../Assets/s1.jpg')
+    }
+
+.Staffaddborder
+{
+    border :22px solid black;
+    width: 90%;
+    height: 45%;
+    margin-left: 5%;
+    margin-top: 5%;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+}
+.Staffhead
+{
+    text-align: center;
+}
+.Staffaddside
+{
+    margin-top: 6%;
+    margin-left: 3%;
+    display: flex;
+    justify-content:space-around;
+
+}
+.title
+{
+    margin-left: 25px;
+}
+.author
+{
+margin-left: 45px;
+}
+.genre
+{
+    margin-left: 50px;
+}
+.year
+{
+    margin-left: 50px;
+}
+.quantity
+{
+    margin-left:20px;
+}
+.space
+{
+    margin-left: 550px;
+    margin-top: 25px;
+}
+.table
+{
+    margin-top: 2%;
+}
