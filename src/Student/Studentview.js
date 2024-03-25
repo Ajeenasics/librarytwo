@@ -58,6 +58,7 @@ function Studentview() {
               <Button
                 variant="outline-danger"
                 onClick={() => {
+
                   alldel(value._id);
                 }}
               >
