@@ -1,0 +1,32 @@
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url('../Assets/lib5.jpg')
+    }
+
+.homebord
+{
+    display: flex;
+    justify-content:space-around;
+    /* border :5px solid rgb(254, 251, 251); */
+    width: 1000px;
+    height: 400px;
+    /* background-color: rgb(237, 234, 234); */
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.homeimg
+{
+    height:350px;
+     width:550px;
+}
+.homewelcome
+{
+    color: red;
+    font-size: 70px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+.homename
+{
+    color: white;
+    font-size: 50px;
+}
