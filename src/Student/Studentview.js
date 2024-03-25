@@ -58,7 +58,7 @@ function Studentview() {
               <Button
                 variant="outline-danger"
                 onClick={() => {
-                  console.log("huhgy");
+
                   alldel(value._id);
                 }}
               >

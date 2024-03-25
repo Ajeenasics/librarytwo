@@ -15,7 +15,9 @@ function Studenthome() {
   </div>
   <div class="homediv2">
     <p class="homewelcome">WELCOME</p>
-    <p class="homename"> STUDENT NAME</p>
+
+    
+    <p class="homename">NAME</p>
     <button type="button" class="btn btn-outline-warning">VIEW BOOKS</button>
   </div>
 </div>

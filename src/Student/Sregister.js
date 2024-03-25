@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import "./Sregister.css";
 import "../Assets/s1.jpg";
+import { Link } from "react-router-dom";
+import Slogin from "./Slogin";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 function Sregister() {
+ const navigate=useNavigate();
   const [data, setData] = useState({
     firstname: "",
     lastname: "",
@@ -12,22 +17,38 @@ function Sregister() {
     password: "",
   });
   const ar = (e) => {
-    setData({ ...data, [e.target.name]: [e.target.value] });
-    console.log(data,"kkkk");
+    setData({ ...data, [e.target.name]: e.target.value});
   };
   const onSubmitfun = () => {
     if (!data.firstname) {
-      alert("fname required");
+      alert("First Name required");
     } else if (!data.lastname) {
-      alert("lastname required");
+      alert("Last Name required");
     } else if (!data.rollno) {
-      alert("rollno required");
+      alert("Rollno required");
     } else if (!data.email) {
-      alert("email required");
+      alert("Email required");
     } else if (!data.phonenumber) {
-      alert("phonenumber required");
+      alert("Phonenumber required");
     } else if (!data.password) {
-      alert("password requires");
+      alert("Password required");
+    } 
+    else {
+      
+      axios
+          .post("http://localhost:4000/Sregister",data)
+          .then((response) => {
+            console.log(response);
+            if (response.data.status == 200) {
+              alert("Registration Successful");
+              navigate('/Slogin')
+            } else {
+              alert("Registration Failed");
+            }
+          })
+          .catch((err) => {
+            setData(err);
+          });
     }
   };
 
@@ -97,8 +118,10 @@ function Sregister() {
         </button>
         <br />
         <br />
-        <p class="sregpara1">Forgotten Password</p>
-        <p class="sregpara2">New User? Sign Up</p>
+        <p class="sregpara1">Forgot Password</p>
+        <p class="sregpara2">
+          Already Registered? <Link to={"/Slogin"}>Sign In</Link>
+        </p>
       </div>
     </div>
   );
