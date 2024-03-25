@@ -1,0 +1,27 @@
+.name{
+    color: white;
+    font-weight: bolder;
+}
+.disp{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 200px;
+  }
+  .welcome
+  {
+    font-size: 50px;
+    color: red;
+  }
+  .para
+  {
+    font-size: 75px;
+  }
+  .cap
+{
+   font-size: 30px;
+   color: #3ed43b;
+  }
+ .card-img-top
+{
+    height: 300px;
+}
