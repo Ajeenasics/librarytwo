@@ -1,0 +1,50 @@
+
+h2{
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+}
+.containers{
+    width: 50%;
+    margin:20px 0px 0px 250px;
+    background-color: #A96131;
+    opacity: 0.8;
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px 20px;
+}
+.mt{
+    margin-top: 10px;
+}
+.form-control{
+    height: 40px;
+}
+#container{
+    background-color: #fff;
+    opacity: 0.9;
+    width: 50%;
+    margin-left: 250px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px 20px;
+}
+.book1{
+    padding-left: 40px;
+    width: 600px;
+}
+.img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 45px;
+}
+.btns{
+    margin-left: 100px;
+    margin-bottom: 80px;
+}
+.hello{
+    background-color: red;
+    height: 40px;
+}
+.btn-outline-info{
+    background: transparent;
+}
+
