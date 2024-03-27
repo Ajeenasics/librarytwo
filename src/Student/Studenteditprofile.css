@@ -1,0 +1,32 @@
+.seditborder{
+    border: 2px solid black;
+    width: 350px;
+    height: 450px;
+    text-align: center;
+    margin-left: 35%;
+    margin-top: 10%;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    border-radius: 10px;
+     }
+.sbut
+{
+    width: 250px;
+    height: 30px;
+    border-radius: 70px;
+}
+.sinp
+{
+    width: 250px;
+    border:none;
+    border-bottom: 2px solid rgb(252, 252, 252);
+    background-color: transparent;
+    color: white;
+    margin-top: 6%;
+}
+.shead
+{
+font-size: 28px;
+margin-top: 10%;
+}
