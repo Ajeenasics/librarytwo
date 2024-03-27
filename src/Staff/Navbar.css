@@ -1,0 +1,47 @@
+.logo {
+    width: 150px; 
+    height: auto; 
+  }
+  
+  .navbar {
+    height: 80px; 
+  }
+  
+  .navlist {
+    margin-left: auto; 
+    font-weight: bold;
+  }
+  
+  .line::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px; 
+    background: #0cb00f; 
+    transition: width .3s ease;
+  }
+  
+  .line:hover::after {
+    width: 100%;
+  }
+  
+  .dropdown {
+    position: relative; 
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 10px; 
+    }
+    
+    .navlist {
+      display: none; 
+    }
+    
+    .dropdown {
+      position: relative; 
+      margin-left: auto; 
+      margin-right: 10px;
+    }
+  }
+  

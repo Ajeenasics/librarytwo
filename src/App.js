@@ -16,6 +16,18 @@ import Studentfine from './Student/Studentfine';
 import Studentfeedback from './Student/Studentfeedback';
 import Studentprofile from './Student/Studentprofile';
 import Studenteditprofile from './Student/Studenteditprofile';
+import Login from './Staff/Login';
+import Register from './Staff/Register';
+import Add from './Staff/Add';
+
+
+import Profile from './Faculty/Profile';
+import Search from './Faculty/Search';
+import Homes from './Staff/Homes';
+import NavBar from './Staff/Navbar';
+import footer from './Staff/footer';
+import FLogin from './Faculty/FLogin';
+import FRegister from './Faculty/FRegister';
 
 function App() {
   return (
@@ -38,7 +50,19 @@ function App() {
         <Route path="/Sfeedback" element={<Studentfeedback/>}/>
         <Route path="/Sprofile" element={<Studentprofile/>}/>
         <Route path="/Sedit" element={<Studenteditprofile/>}/>
+        <Route path='/login' element={<Login/>} />
 
+
+
+          <Route path='/add' element={<Add/>} />
+          <Route path='/register' element={<Register/>} />
+          <Route path='/profile' element={<Profile/>} />
+          <Route path='/search' element={<Search/>} />
+          <Route path='/home' element={<Homes/>} />
+          <Route path='/navbar' element={<NavBar/>} />
+          <Route path='/footer' element={<footer/>} />
+          <Route path='/flogin' element={<FLogin/>} />
+          <Route path='/fregister' element={<FRegister/>} /> 
       </Routes>
       </BrowserRouter>
   
