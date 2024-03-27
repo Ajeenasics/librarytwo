@@ -17,7 +17,7 @@ function Sregister() {
     email: "",
     phonenumber: "",
     password: "",
-  });
+  })
   const ar = (e) => {
     setData({ ...data, [e.target.name]: e.target.value});
   };
