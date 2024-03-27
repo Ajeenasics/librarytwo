@@ -12,6 +12,10 @@ import Studentnav from './Nav/Studentnav';
 import Home from './Home/Home';
 import Studentview from './Student/Studentview';
 import Studenthome from './Student/Studenthome';
+import Studentfine from './Student/Studentfine';
+import Studentfeedback from './Student/Studentfeedback';
+import Studentprofile from './Student/Studentprofile';
+import Studenteditprofile from './Student/Studenteditprofile';
 
 function App() {
   return (
@@ -27,9 +31,14 @@ function App() {
         <Route path="/Staffaddbook" element={<Staffaddbook/>}/>
         <Route path="/Footer" element={<Footer/>}/>
         <Route path="/Navbar" element={<Studentnav/>}/>
-        <Route path="/Home" element={<Home/>}/>
+        <Route path="/" element={<Home/>}/>
         <Route path="/Sview" element={<Studentview/>}/>
         <Route path="/Shome" element={<Studenthome/>}/>
+        <Route path="/Sfine" element={<Studentfine/>}/>
+        <Route path="/Sfeedback" element={<Studentfeedback/>}/>
+        <Route path="/Sprofile" element={<Studentprofile/>}/>
+        <Route path="/Sedit" element={<Studenteditprofile/>}/>
+
       </Routes>
       </BrowserRouter>
   

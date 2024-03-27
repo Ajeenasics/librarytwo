@@ -1,46 +1,32 @@
-body{
-    background-image: url('../Assets/s1.jpg')
-    }
-.sregborder{
+.seditborder{
     border: 2px solid black;
-    width: 400px;
-    height: 550px;
+    width: 350px;
+    height: 450px;
     text-align: center;
     margin-left: 35%;
-    margin-top: 2%;
+    margin-top: 10%;
     background-color: black;
     opacity: 0.8;
     color: white;
     border-radius: 10px;
      }
-.sregbut
+.sbut
 {
     width: 250px;
     height: 30px;
     border-radius: 70px;
 }
-.sregbut:hover
-{
-background-color: red;
-}
-.sreginp
+.sinp
 {
     width: 250px;
     border:none;
     border-bottom: 2px solid rgb(252, 252, 252);
     background-color: transparent;
     color: white;
+    margin-top: 6%;
 }
-.sreghead
+.shead
 {
-font-size: 20px;
-margin-top: 5%;
-}
-.sregpara1
-{
-    font-size: 18px;
-}
-.sregpara2
-{
-    font-size: 14px;
+font-size: 28px;
+margin-top: 10%;
 }

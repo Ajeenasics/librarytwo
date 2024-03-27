@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import Slogin from "./Slogin";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import Studentnav from "../Nav/Studentnav";
+import Footer from "../Footer/Footer";
 
 function Sregister() {
  const navigate=useNavigate();
@@ -54,6 +56,8 @@ function Sregister() {
 
   return (
     <div>
+
+    <Studentnav/>
       <h1 id="hii">.</h1>
       <div class="sregborder">
         <h2 class="sreghead">STUDENT REGISTRATION FORM</h2>
@@ -123,6 +127,8 @@ function Sregister() {
           Already Registered? <Link to={"/Slogin"}>Sign In</Link>
         </p>
       </div>
+<br/>
+      <Footer/>
     </div>
   );
 }
