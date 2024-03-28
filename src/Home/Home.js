@@ -8,6 +8,7 @@ import Sirstephenhawking from '../Assets/Sirstephenhawking.jpg';
 import Sirwaltdisney from '../Assets/Sirwaltdisney.jpg';
 import './Home.css'
 import Footer from '../Footer/Footer';
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -30,8 +31,11 @@ function Home() {
         <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">LOGIN</a>
     <ul class="dropdown-menu">
+    
       <li><a class="dropdown-item">FACULTY</a></li>
+      <Link to={"/login"} style={{textDecoration:"none"}}>
       <li><a class="dropdown-item">STAFF</a></li>
+      </Link>
       <li><a class="dropdown-item">STUDENT</a></li>
     </ul>
   </li>

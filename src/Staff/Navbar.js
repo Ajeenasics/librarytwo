@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../Assets/logo5.png";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
@@ -22,9 +23,10 @@ function NavBar() {
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav navlist">
               <li class="nav-item">
+              <Link to={'/Sview'} style={{textDecoration:"none"}}>
                 <a class="nav-link active line" aria-current="page" href="#">
                   Student
-                </a>
+                </a></Link>
               </li>
               <li class="nav-item">
                 <a class="nav-link active line" href="#">
@@ -56,10 +58,10 @@ function NavBar() {
                 </svg>
               </a>
               <ul class="dropdown-menu dropdown-menu-lg-end">
-                <li>
+                <li><Link to={'/staffprofile'} style={{textDecoration:"none"}}>
                   <a href="#" class="dropdown-item">
                     Profile
-                  </a>
+                  </a></Link>
                 </li>
                 <li>
                   <a href="#" class="dropdown-item">

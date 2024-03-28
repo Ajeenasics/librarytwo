@@ -1,11 +1,12 @@
 import React from "react";
 import "./Login.css";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import img from "../Assets/lib 2.png";
 
 function Log() {
+  const navigate = useNavigate()
   const [login, setLogin] = useState({
     email: "",
     password: "",
@@ -21,7 +22,12 @@ function Log() {
         .post("http://localhost:4000/find", login)
         .then((res) => {
           if (res.data.status === 200) {
+
+            localStorage.setItem("staffid",res.data.data._id)
+            console.log(localStorage.getItem('staffid'));
+            
             alert("Login Success");
+            navigate('/staffhome')
           } else {
             alert("Login Failed");
           }

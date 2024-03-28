@@ -68,6 +68,9 @@ function Studentview() {
           </tbody>
         ))}
       </Table>
+      <Link to={"/staffhome"}>
+      <button type='button' className='btn btn-primary'>Back</button>
+      </Link>
 
     </div>
   )

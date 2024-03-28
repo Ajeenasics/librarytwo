@@ -24,6 +24,8 @@ import NavBar from './Staff/Navbar';
 import footer from './Staff/footer';
 import FLogin from './Faculty/FLogin';
 import FRegister from './Faculty/FRegister';
+import StaffProfile from './Staff/StaffProfile';
+import StaffEditProfile from './Staff/StaffEditProfile';
 
 
 function App() {
@@ -40,7 +42,7 @@ function App() {
         <Route path="/Staffaddbook" element={<Staffaddbook/>}/>
         <Route path="/Footer" element={<Footer/>}/>
         <Route path="/Navbar" element={<Studentnav/>}/>
-        <Route path="/Home" element={<Home/>}/>
+        <Route path="/" element={<Home/>}/>
         <Route path="/Sview" element={<Studentview/>}/>
         <Route path="/Shome" element={<Studenthome/>}/>
         <Route path='/login' element={<Login/>} />
@@ -51,11 +53,13 @@ function App() {
           <Route path='/register' element={<Register/>} />
           <Route path='/profile' element={<Profile/>} />
           <Route path='/search' element={<Search/>} />
-          <Route path='/home' element={<Homes/>} />
+          <Route path='/staffhome' element={<Homes/>} />
           <Route path='/navbar' element={<NavBar/>} />
           <Route path='/footer' element={<footer/>} />
           <Route path='/flogin' element={<FLogin/>} />
           <Route path='/fregister' element={<FRegister/>} /> 
+          <Route path='/staffprofile' element={<StaffProfile/>} /> 
+          <Route path='/editProfile' element={<StaffEditProfile/>} /> 
       </Routes>
       </BrowserRouter>
   

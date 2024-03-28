@@ -27,7 +27,7 @@ function Register() {
         if(res.data.status === 200){
 
           alert("Register Successful")
-          navigate('/')
+          navigate('/login')
         }
         else{
           alert('Registration Failed')
