@@ -1,9 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import FNavbar from './FNavbar'
 
 function FLogin() {
   return (
     <div>
+    <FNavbar/>
     <form action="">
     <div className="login">
       <h3 className="head">FACULTY LOGIN</h3>

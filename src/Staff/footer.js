@@ -3,7 +3,7 @@ import React from 'react'
 function footer() {
   return (
     <div>
-    <footer class="bg-body-secondary text-center text-white fixed-bottom" style={{height:"70px"}}>
+    <footer class="bg-body-secondary text-center text-white " style={{height:"70px"}}>
     <div class="container p-3 pb-0">
       <section class="mb-4">
         <a

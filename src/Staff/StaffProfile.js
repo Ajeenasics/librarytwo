@@ -3,9 +3,10 @@ import "../Staff/StaffProfile.css";
 import img from "../Assets/staffProfile.png";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
+import NavBar from "./Navbar";
 
 function StaffProfile() {
-    const navigate = useNavigate()
+  const navigate = useNavigate()
   const [details, setDetails] = useState({});
 
   const id = localStorage.getItem("staffid");
@@ -30,6 +31,8 @@ function StaffProfile() {
 
   return (
     <div>
+
+    <NavBar/>
       <div className="pro">
         <img src={img} alt="" className="image" />
         <div className="align">

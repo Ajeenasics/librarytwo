@@ -44,7 +44,8 @@ function Home() {
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"  role="button" aria-expanded="false">REGISTER</a>
     <ul class="dropdown-menu">
       <li><a class="dropdown-item">FACULTY</a></li>
-      <li><a class="dropdown-item">STAFF</a></li>
+      <Link to={"/register"} style={{textDecoration:"none"}}>
+      <li><a class="dropdown-item">STAFF</a></li></Link>
       <li><a class="dropdown-item">STUDENT</a></li>
     </ul>
   </li>

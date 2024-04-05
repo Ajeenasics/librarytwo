@@ -1,0 +1,21 @@
+.container {
+    padding: 5rem 0rem;
+  }
+  
+  .table-image {
+    td, th {
+      vertical-align: middle;
+    }
+  }
+  .eBooks{
+    margin-right: 5px;
+  }
+  .dBooks{
+    margin-left: 5px;
+  }
+ .addbookbtn{
+    margin: 50px 0px 0px 300px;
+    width: 500px;
+ }
+ 
+  

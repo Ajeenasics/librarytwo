@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "./Add.css";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 function Add() {
+  const navigate = useNavigate()
   const [add, setAdd] = useState({
     title: "",
     author: "",
@@ -32,6 +34,7 @@ function Add() {
           if (response.data.status == 200) {
             // console.log("book added successfully", response);
             alert('book add success')
+            navigate('/viewbook')
           } else {
             alert("book add failed");
           }

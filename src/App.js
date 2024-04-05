@@ -10,7 +10,7 @@ import {BrowserRouter,Route,Routes} from 'react-router-dom'
 import Footer from './Footer/Footer';
 import Studentnav from './Nav/Studentnav';
 import Home from './Home/Home';
-import Studentview from './Student/Studentview';
+import Studentview from './Staff/Studentview';
 import Studenthome from './Student/Studenthome';
 import Login from './Staff/Login';
 import Register from './Staff/Register';
@@ -26,6 +26,9 @@ import FLogin from './Faculty/FLogin';
 import FRegister from './Faculty/FRegister';
 import StaffProfile from './Staff/StaffProfile';
 import StaffEditProfile from './Staff/StaffEditProfile';
+import StaffViewBook from './Staff/StaffViewBook';
+import StaffEditBook from './Staff/StaffEditBook';
+import BookHiring from './Staff/BookHiring';
 
 
 function App() {
@@ -60,6 +63,9 @@ function App() {
           <Route path='/fregister' element={<FRegister/>} /> 
           <Route path='/staffprofile' element={<StaffProfile/>} /> 
           <Route path='/editProfile' element={<StaffEditProfile/>} /> 
+          <Route path='/viewbook' element={<StaffViewBook/>} /> 
+          <Route path='/editbook/:id' element={<StaffEditBook/>} /> 
+          <Route path='/hirebook' element={<BookHiring/>} /> 
       </Routes>
       </BrowserRouter>
   
