@@ -46,7 +46,6 @@ function StaffEditProfile() {
              await axios.post(`http://localhost:4000/editprofile/${id}`,{name,email,contact})
               alert('edit successfully')
               navigate('/staffprofile')
-              
              }
              catch(err){
                console.error(err);

@@ -10,6 +10,9 @@ import './Home.css'
 import Footer from '../Footer/Footer';
 import { Link } from 'react-router-dom';
 
+import Slogin from '../Student/Slogin';
+
+
 function Home() {
   return (
     <div>
@@ -36,7 +39,9 @@ function Home() {
       <Link to={"/login"} style={{textDecoration:"none"}}>
       <li><a class="dropdown-item">STAFF</a></li>
       </Link>
+      <Link to ={'/Slogin'}>
       <li><a class="dropdown-item">STUDENT</a></li>
+      </Link>
     </ul>
   </li>
 
@@ -46,7 +51,10 @@ function Home() {
       <li><a class="dropdown-item">FACULTY</a></li>
       <Link to={"/register"} style={{textDecoration:"none"}}>
       <li><a class="dropdown-item">STAFF</a></li></Link>
+      <li><a class="dropdown-item">STAFF</a></li>
+      <Link to ={'/Sregister'}>
       <li><a class="dropdown-item">STUDENT</a></li>
+      </Link>
     </ul>
   </li>
   <li class="nav-item">
