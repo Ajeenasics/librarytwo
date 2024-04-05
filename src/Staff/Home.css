@@ -1,19 +1,18 @@
-.move{
-    margin-left: 800px;
-}
+
 .home{
     background-color: #F7F9EC;
+    /* height: 100%; */
    
 }
 .homeimg{
     width: 600px;
-    height: 500px;
+    height: 550px;
     overflow: hidden;
 }
 .bookimg{
-    width: 100%;
-    transform: scale(1.5);
-    transform-origin: center;
+    width: 800px;
+    position: absolute;
+    right: 600px;
 }
 .content{
     position: absolute;

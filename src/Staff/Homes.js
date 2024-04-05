@@ -16,6 +16,7 @@ function Homes() {
             <h1 className="text-primary">WELCOME TO LIBRARY</h1>
             <h5> Where Every Page is a New Adventure</h5>
             <p>&#128216; Start your reading journey today</p>
+            {/* <button className="btn btn-success">Books</button> */}
           </div>
       </div>
       <Footer/>

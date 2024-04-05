@@ -1,0 +1,63 @@
+
+/* .student_table{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    border-collapse: collapse;
+    width: 900px;
+    height: auto;
+} */
+
+.header_fixed {
+    /* max-height: 100vh; */
+    /* width: 100%; */
+    /* overflow: auto; */
+    /* border: 1px solid #dddddd; */
+    height: auto;
+    margin-left: 80px;
+}
+
+.header_fixed thead th {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    color: #e6e7e8;
+    font-size: 15px;
+}
+
+.Sth,
+.Std {
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 20px;
+    font-size: 14px;
+    height: auto;
+}
+
+
+
+.Str:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.Str:nth-child(odd) {
+    background-color: #edeef1;
+}
+
+.Str:hover td {
+    color: blue;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+/* ::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+} */

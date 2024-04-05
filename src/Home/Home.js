@@ -9,7 +9,9 @@ import Sirwaltdisney from '../Assets/Sirwaltdisney.jpg';
 import './Home.css'
 import Footer from '../Footer/Footer';
 import { Link } from 'react-router-dom';
+
 import Slogin from '../Student/Slogin';
+
 
 function Home() {
   return (
@@ -32,8 +34,11 @@ function Home() {
         <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">LOGIN</a>
     <ul class="dropdown-menu">
+    
       <li><a class="dropdown-item">FACULTY</a></li>
+      <Link to={"/login"} style={{textDecoration:"none"}}>
       <li><a class="dropdown-item">STAFF</a></li>
+      </Link>
       <Link to ={'/Slogin'}>
       <li><a class="dropdown-item">STUDENT</a></li>
       </Link>
@@ -44,6 +49,8 @@ function Home() {
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"  role="button" aria-expanded="false">REGISTER</a>
     <ul class="dropdown-menu">
       <li><a class="dropdown-item">FACULTY</a></li>
+      <Link to={"/register"} style={{textDecoration:"none"}}>
+      <li><a class="dropdown-item">STAFF</a></li></Link>
       <li><a class="dropdown-item">STAFF</a></li>
       <Link to ={'/Sregister'}>
       <li><a class="dropdown-item">STUDENT</a></li>

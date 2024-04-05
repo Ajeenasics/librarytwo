@@ -10,7 +10,7 @@ import {BrowserRouter,Route,Routes} from 'react-router-dom'
 import Footer from './Footer/Footer';
 import Studentnav from './Nav/Studentnav';
 import Home from './Home/Home';
-import Studentview from './Student/Studentview';
+import Studentview from './Staff/Studentview';
 import Studenthome from './Student/Studenthome';
 import Studentfine from './Student/Studentfine';
 import Studentfeedback from './Student/Studentfeedback';
@@ -28,9 +28,16 @@ import NavBar from './Staff/Navbar';
 import footer from './Staff/footer';
 import FLogin from './Faculty/FLogin';
 import FRegister from './Faculty/FRegister';
+import StaffProfile from './Staff/StaffProfile';
+import StaffEditProfile from './Staff/StaffEditProfile';
+import StaffViewBook from './Staff/StaffViewBook';
+import StaffEditBook from './Staff/StaffEditBook';
+import BookHiring from './Staff/BookHiring';
+
 import Studentviewbook from './Student/Studentviewbook';
 import Sbookdetails from './Student/Sbookdetails';
 import Swishlist from './Student/Swishlist';
+
 
 function App() {
   return (
@@ -64,11 +71,16 @@ function App() {
           <Route path='/register' element={<Register/>} />
           <Route path='/profile' element={<Profile/>} />
           <Route path='/search' element={<Search/>} />
-          <Route path='/home' element={<Homes/>} />
+          <Route path='/staffhome' element={<Homes/>} />
           <Route path='/navbar' element={<NavBar/>} />
           <Route path='/footer' element={<footer/>} />
           <Route path='/flogin' element={<FLogin/>} />
           <Route path='/fregister' element={<FRegister/>} /> 
+          <Route path='/staffprofile' element={<StaffProfile/>} /> 
+          <Route path='/editProfile' element={<StaffEditProfile/>} /> 
+          <Route path='/viewbook' element={<StaffViewBook/>} /> 
+          <Route path='/editbook/:id' element={<StaffEditBook/>} /> 
+          <Route path='/hirebook' element={<BookHiring/>} /> 
       </Routes>
       </BrowserRouter>
   
