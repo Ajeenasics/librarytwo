@@ -12,6 +12,10 @@ import Studentnav from './Nav/Studentnav';
 import Home from './Home/Home';
 import Studentview from './Student/Studentview';
 import Studenthome from './Student/Studenthome';
+import Studentfine from './Student/Studentfine';
+import Studentfeedback from './Student/Studentfeedback';
+import Studentprofile from './Student/Studentprofile';
+import Studenteditprofile from './Student/Studenteditprofile';
 import Login from './Staff/Login';
 import Register from './Staff/Register';
 import Add from './Staff/Add';
@@ -24,7 +28,9 @@ import NavBar from './Staff/Navbar';
 import footer from './Staff/footer';
 import FLogin from './Faculty/FLogin';
 import FRegister from './Faculty/FRegister';
-
+import Studentviewbook from './Student/Studentviewbook';
+import Sbookdetails from './Student/Sbookdetails';
+import Swishlist from './Student/Swishlist';
 
 function App() {
   return (
@@ -40,10 +46,17 @@ function App() {
         <Route path="/Staffaddbook" element={<Staffaddbook/>}/>
         <Route path="/Footer" element={<Footer/>}/>
         <Route path="/Navbar" element={<Studentnav/>}/>
-        <Route path="/Home" element={<Home/>}/>
+        <Route path="/" element={<Home/>}/>
         <Route path="/Sview" element={<Studentview/>}/>
         <Route path="/Shome" element={<Studenthome/>}/>
+        <Route path="/Sfine" element={<Studentfine/>}/>
+        <Route path="/Sfeedback" element={<Studentfeedback/>}/>
+        <Route path="/Sprofile" element={<Studentprofile/>}/>
+        <Route path="/Sedit" element={<Studenteditprofile/>}/>
         <Route path='/login' element={<Login/>} />
+        <Route path='/Viewbook' element={<Studentviewbook/>} />
+        <Route path='/Bookdetails/:id' element={<Sbookdetails/>}/>
+        <Route path='/Swishlist' element={<Swishlist/>}/>
 
 
 

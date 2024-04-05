@@ -1,0 +1,16 @@
+.bord{
+    border: 2px solid black;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    margin-left: 35%;
+    margin-top:5%;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    border-radius: 10px;
+     }
+     .name
+     {
+        font-size: 30px;
+     }

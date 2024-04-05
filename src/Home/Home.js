@@ -8,6 +8,8 @@ import Sirstephenhawking from '../Assets/Sirstephenhawking.jpg';
 import Sirwaltdisney from '../Assets/Sirwaltdisney.jpg';
 import './Home.css'
 import Footer from '../Footer/Footer';
+import { Link } from 'react-router-dom';
+import Slogin from '../Student/Slogin';
 
 function Home() {
   return (
@@ -32,7 +34,9 @@ function Home() {
     <ul class="dropdown-menu">
       <li><a class="dropdown-item">FACULTY</a></li>
       <li><a class="dropdown-item">STAFF</a></li>
+      <Link to ={'/Slogin'}>
       <li><a class="dropdown-item">STUDENT</a></li>
+      </Link>
     </ul>
   </li>
 
@@ -41,7 +45,9 @@ function Home() {
     <ul class="dropdown-menu">
       <li><a class="dropdown-item">FACULTY</a></li>
       <li><a class="dropdown-item">STAFF</a></li>
+      <Link to ={'/Sregister'}>
       <li><a class="dropdown-item">STUDENT</a></li>
+      </Link>
     </ul>
   </li>
   <li class="nav-item">

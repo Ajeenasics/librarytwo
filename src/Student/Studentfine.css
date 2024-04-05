@@ -1,8 +1,4 @@
-body
-{
-    background-image:url('../Assets/s1.jpg');
-}
-.Ffineborder
+.Sbord
 {
     border :22px solid black;
     width: 90%;
@@ -13,11 +9,11 @@ body
     opacity: 0.8;
     color: white;
 }
-.Ffinehead
+.Shead
 {
     text-align: center;
 }
-.Ffineside
+.Sside
 {
     margin-top: 8%;
     margin-left: 3%;
@@ -28,6 +24,8 @@ body
     background-color: transparent;
     border: none;
     border-bottom:2px solid white;
+    
+
 }
 .boxs
 {
