@@ -1,0 +1,12 @@
+.col
+{
+    margin-top: 5%;
+    display: flex;
+    justify-content:space-evenly; 
+}
+.hbook
+{
+    margin-top: 10%;
+    color: white;
+    font-size: 50px;
+}

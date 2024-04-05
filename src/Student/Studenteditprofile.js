@@ -1,9 +1,11 @@
 import React, { useState,useEffect } from 'react';
 import './Studenteditprofile.css';
 import axios from "axios";
-import { useParams,useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Studenteditprofile() {
+const navigate=useNavigate();
+
 const [firstname,setFirstname]=useState()
 const [lastname,setLastname]=useState()
 const [email,setEmail]=useState()
@@ -42,6 +44,7 @@ const updateid = async() => {
   try{
   await axios.post(`http://localhost:4000/updateone/${id}`,{firstname,lastname,email,phonenumber})
       alert('Content update successfully')
+      navigate('/Shome')
   }
   catch(err){
     console.error(err.response.data.msg);

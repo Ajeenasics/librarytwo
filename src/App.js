@@ -28,6 +28,9 @@ import NavBar from './Staff/Navbar';
 import footer from './Staff/footer';
 import FLogin from './Faculty/FLogin';
 import FRegister from './Faculty/FRegister';
+import Studentviewbook from './Student/Studentviewbook';
+import Sbookdetails from './Student/Sbookdetails';
+import Swishlist from './Student/Swishlist';
 
 function App() {
   return (
@@ -51,6 +54,9 @@ function App() {
         <Route path="/Sprofile" element={<Studentprofile/>}/>
         <Route path="/Sedit" element={<Studenteditprofile/>}/>
         <Route path='/login' element={<Login/>} />
+        <Route path='/Viewbook' element={<Studentviewbook/>} />
+        <Route path='/Bookdetails/:id' element={<Sbookdetails/>}/>
+        <Route path='/Swishlist' element={<Swishlist/>}/>
 
 
 

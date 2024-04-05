@@ -8,7 +8,8 @@ import { useNavigate } from 'react-router-dom';
 function Studentprofile() {
     const navigate=useNavigate()
 const [data,setData]=useState({})
-const id=localStorage.getItem('studentid')
+
+const id=localStorage.getItem('studentid') 
 const empdid=()=>{
     axios.get(`http://localhost:4000/findname/${id}`).then((response)=>{
         setData(response.data.data)
