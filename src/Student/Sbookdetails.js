@@ -43,7 +43,7 @@ if (response.data.status == 200) {
 const[wish,setWish]=useState({
   bookid:id.id,
   studid:localStorage.getItem('studentid') || "",
-  Date:new Date().toISOString().split('T')[0]
+  Date:new Date()
 })
 const wishlistbook=(bookid)=>{
     

@@ -1,0 +1,23 @@
+
+.text-center{
+    margin-top: 100px;
+    color: whitesmoke;
+}
+.viewfeed{
+    background-color: aliceblue;
+}
+
+
+@media (max-width: 767px) {
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .table-responsive {
+      overflow-x: auto;
+    }
+  }
+  

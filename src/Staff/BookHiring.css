@@ -1,5 +1,27 @@
-.HBook{
-    display: flex;
-    margin-top: 150px;
-    /* background-color: antiquewhite; */
+.scroll{
+    background-color: lightblue;
+    position: sticky;
+    top: 0;
 }
+.table_scroll{
+    height: 290px;
+    width: 900px;
+    overflow-y: auto;
+    /* border: 2px solid red; */
+}
+.table_scroll::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  .table_scroll::-webkit-scrollbar-track {
+    background: orange;        /* color of the tracking area */
+  }
+  
+  .table_scroll::-webkit-scrollbar-thumb {
+    background-color: blue;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid orange;  /* creates padding around scroll thumb */
+  }
+
+
+  

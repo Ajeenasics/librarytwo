@@ -44,6 +44,10 @@ function NavBar() {
                   Hiring Details
                 </a>
               </li></Link>
+              <Link to={'/viewfeedback'} style={{textDecoration:"none"}}>
+                <a class="nav-link active line" aria-current="page" href="#">
+                  Feedback
+                </a></Link>
             </ul>
             <div class="dropdown">
               <a
