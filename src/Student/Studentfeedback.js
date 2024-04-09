@@ -12,6 +12,7 @@ function Studentfeedback() {
   const [task, setTask] = useState({
     studid:localStorage.getItem('studentid') || "",
     feedback: "",
+    Date:new Date().toISOString().split('T')[0]
   })
   const feed = (e) => {
     setTask({ ...task, [e.target.name]: e.target.value});

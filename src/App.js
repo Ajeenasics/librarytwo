@@ -37,6 +37,7 @@ import BookHiring from './Staff/BookHiring';
 import Studentviewbook from './Student/Studentviewbook';
 import Sbookdetails from './Student/Sbookdetails';
 import Swishlist from './Student/Swishlist';
+import StaffViewFeedback from './Staff/StaffViewFeedback';
 
 
 function App() {
@@ -61,7 +62,7 @@ function App() {
         <Route path="/Sprofile" element={<Studentprofile/>}/>
         <Route path="/Sedit" element={<Studenteditprofile/>}/>
         <Route path='/login' element={<Login/>} />
-        <Route path='/Viewbook' element={<Studentviewbook/>} />
+        <Route path='/SViewbook' element={<Studentviewbook/>} />
         <Route path='/Bookdetails/:id' element={<Sbookdetails/>}/>
         <Route path='/Swishlist' element={<Swishlist/>}/>
 
@@ -81,6 +82,7 @@ function App() {
           <Route path='/viewbook' element={<StaffViewBook/>} /> 
           <Route path='/editbook/:id' element={<StaffEditBook/>} /> 
           <Route path='/hirebook' element={<BookHiring/>} /> 
+          <Route path='/viewfeedback' element={<StaffViewFeedback/>} /> 
       </Routes>
       </BrowserRouter>
   

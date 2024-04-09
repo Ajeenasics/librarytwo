@@ -37,7 +37,7 @@ function StaffEditBook() {
 
   const getValues = () => {
     axios
-      .get(`http://localhost:4000/viewdatas/${id}`)
+      .get(`http://localhost:4000/Bookdetails/${id}`)
       .then((res) => {
         console.log(res.data);
         setTitle(res.data.data.title);
@@ -59,8 +59,6 @@ function StaffEditBook() {
     console.log("image",image);
     try{
       await axios.post('http://localhost:4000/savebook/'+id,{title,author,isbn,description,image},{
-
-      
         headers: {
           "Content-Type": "multipart/form-data",
         }
