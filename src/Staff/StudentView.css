@@ -17,6 +17,10 @@
     height: auto;
     margin-left: 80px;
 }
+.over{
+    overflow-y: auto;
+    /* width: 100%; */
+}
 
 .header_fixed thead th {
     position: sticky;

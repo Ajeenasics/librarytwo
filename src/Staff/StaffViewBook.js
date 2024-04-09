@@ -10,9 +10,10 @@ function StaffViewBook() {
 
   const getBook = () => {
     axios
-      .get("http://localhost:4000/allbooks")
+      .get("http://localhost:4000/viewbook")
       .then((res) => {
         setView(res.data.data);
+        console.log(res);
       })
       .catch((err) => {
         setView(err);
@@ -35,9 +36,14 @@ function StaffViewBook() {
 
   return (
     <div>
-      <NavBar />
+       <NavBar /> *
 
       <div>
+        <div className="hedd d-flex justify-content-around "><h2 style={{color:"white"}}>booklist</h2>
+        <Link to={"/add"}>
+        <button className="btn btn-primary ">Add Book</button>
+        </Link>
+        </div>
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -54,7 +60,7 @@ function StaffViewBook() {
                   </tr>
                 </thead>
                 {view.map((val, ind) => (
-                  <tbody>
+                  <tbody >
                     <tr>
                       <th scope="row">{ind + 1}</th>
                       <td className="w-25">
@@ -108,11 +114,6 @@ function StaffViewBook() {
                   </tbody>
                 ))}
               </table>
-              <Link to={"/add"}>
-                <button type="button" className="addbookbtn btn btn-success">
-                  Add Book
-                </button>
-              </Link>
             </div>
           </div>
         </div>

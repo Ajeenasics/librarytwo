@@ -1,8 +1,14 @@
 
-.home{
-    background-color: #F7F9EC;
-    /* height: 100%; */
+ /* .home{
+     background-color: #F7F9EC; 
+    height: 100%; 
    
+}  */
+
+.hback{
+    background-image: url('../Assets/back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .homeimg{
     width: 600px;

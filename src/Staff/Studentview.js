@@ -44,7 +44,7 @@ function Studentview() {
     <div class="header_fixed">
     
     <div className='col-11'>
-        <table className='table ' style={{marginTop:"100px"}}>
+        <table className='table' style={{marginTop:"100px"}}>
             <thead>
                 <tr className='Str'>
                     <th scope='col'>S No.</th>
@@ -56,7 +56,7 @@ function Studentview() {
                 </tr>
             </thead>
             {data.map((value, index) => (
-            <tbody>
+            <tbody className='over'>
                 <tr className='Str'>
                     <td>{index + 1}</td>
                     <td>{value.firstname}</td>

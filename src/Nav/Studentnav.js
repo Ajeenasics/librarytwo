@@ -20,7 +20,7 @@ function Studentnav() {
     <div class="nav justify-content-end">
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <Link to={'/Viewbook'}>
+        <Link to={'/SViewbook'}>
         <a class="nav-link active" aria-current="page">Book</a>
         </Link>
         <Link to={'/Swishlist'}>
