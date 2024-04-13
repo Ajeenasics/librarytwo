@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import './Sbookdetails.css';
 import axios from 'axios';
-import { useParams } from 'react-router-dom';
+import { useParams,useNavigate } from 'react-router-dom';
 import Studentnav from '../Nav/Studentnav';
 import Footer from '../Footer/Footer';
 
 
 function Sbookdetails() {
+  const navigate=useNavigate()
   const id=useParams()
 
   const [data,setData]=useState({
@@ -53,6 +54,7 @@ const wishlistbook=(bookid)=>{
   console.log(response);
   if (response.data.status == 200) {
     alert("Wishlist added");
+    navigate('/Swishlist')
   } else {
     alert("Wishlist not added");
   }

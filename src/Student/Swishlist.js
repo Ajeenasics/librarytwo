@@ -3,9 +3,14 @@ import axios from 'axios';
 
 function Swishlist() {
   const [book, setBook]=useState([])
+
+  const id=localStorage.getItem('studentid')
   const getborrow=()=>{
-    axios.get('http://localhost:4000/findwishlist').then((response)=>{
+    axios.post(`http://localhost:4000/findwishlist/${id}`).then((response)=>{
+      if(response.data)
       setBook(response.data.data)
+    else
+    setBook(null)
       console.log(response);
     })
     .catch((err)=>{
@@ -21,30 +26,17 @@ function Swishlist() {
     <div>
 
 
-
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col"></th>
-      <th scope="col">BOOK ID</th>
-      <th scope="col">STUDENT ID</th>
-      <th scope="col">DATE BORROWED</th>
-    </tr>
-  </thead>
-  
-    {book.map((value,index)=>(
-
-<tbody>
-    <tr>
-      <th scope="row">{index+1}</th>
-      <td>{value.bookid}</td>
-      <td>{value.studid}</td>
-      <td>{value.Date}</td>
-    </tr>
-    </tbody>
-     ))}
-
-</table>
+{book.length>0?(
+book.map((value,index)=>(
+<div class="card" style={{width: "18rem"}}>
+  <img src={`http://localhost:4000/${value.bookid.image.filename}`} class="card-img-top" alt="..."/>
+  <div class="card-body">
+    <h5 class="card-title">{value.bookid.title}</h5>
+    {/* <p class="card-text">{value.studentid.firstname}</p> */}
+    <a href="#" class="btn btn-primary">BORROW</a>
+  </div>
+</div>
+)) ):(<h1>No Books Found</h1>)}
 
 
     </div>
