@@ -68,7 +68,6 @@ function BookHiring() {
         <Link to={'/requests'}>
         <button type="button" className="btn btn-success">Requests</button></Link>
       </div>
-
       <div className="container">
         <div className="col-12 d-flex justify-content-center">
           <div className="table_scroll ">

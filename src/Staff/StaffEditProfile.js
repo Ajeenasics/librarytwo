@@ -54,11 +54,11 @@ function StaffEditProfile() {
     
   return (
     <div>
-      <div className="Container " style={{ width: "40%", margin:"100px 0px 0px 150px" }}>
+      <div className="Container " style={{ width: "35%", margin:"100px 0px 0px 150px",opacity:'1',borderRadius:"20px" }}>
         <h2 className="sr">Edit Profile</h2>
         <form>
           <div class="form-groups">
-            <label for="fullName" className="mm">
+            <label for="fullName" >
               Full Name
             </label>
             <input
@@ -103,7 +103,7 @@ function StaffEditProfile() {
               required
             />
           </div>
-          <div><button type="button" className="btn btn-success" style={{marginLeft:"200px"}} onClick={saveData} >Save</button></div>
+          <div><button type="button" className="btn btn-success" style={{marginLeft:"172px"}} onClick={saveData} >Save</button></div>
         </form>
       </div>
     </div>
