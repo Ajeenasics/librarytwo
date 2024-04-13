@@ -36,10 +36,10 @@ function StaffViewBook() {
 
   return (
     <div>
-       <NavBar /> *
+       <NavBar /> 
 
       <div>
-        <div className="hedd d-flex justify-content-around "><h2 style={{color:"white"}}>booklist</h2>
+        <div className="hedd d-flex justify-content-around"><h2 style={{color:"white"}}>booklist</h2>
         <Link to={"/add"}>
         <button className="btn btn-primary ">Add Book</button>
         </Link>

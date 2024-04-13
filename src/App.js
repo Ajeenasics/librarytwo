@@ -38,6 +38,7 @@ import Studentviewbook from './Student/Studentviewbook';
 import Sbookdetails from './Student/Sbookdetails';
 import Swishlist from './Student/Swishlist';
 import StaffViewFeedback from './Staff/StaffViewFeedback';
+import Requests from './Staff/Requests';
 
 
 function App() {
@@ -83,6 +84,7 @@ function App() {
           <Route path='/editbook/:id' element={<StaffEditBook/>} /> 
           <Route path='/hirebook' element={<BookHiring/>} /> 
           <Route path='/viewfeedback' element={<StaffViewFeedback/>} /> 
+          <Route path='/requests' element={<Requests/>} /> 
       </Routes>
       </BrowserRouter>
   

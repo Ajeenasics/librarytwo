@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../Assets/logo5.png";
+import logo from "../Assets/logo.png";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 
@@ -27,7 +27,7 @@ function NavBar() {
               <li class="nav-item">
               <Link to={'/Sview'} style={{textDecoration:"none"}}>
                 <a class="nav-link active line" aria-current="page" href="#">
-                  Student
+                  Students
                 </a></Link>
               </li>
               <li class="nav-item">
@@ -46,7 +46,7 @@ function NavBar() {
               </li></Link>
               <Link to={'/viewfeedback'} style={{textDecoration:"none"}}>
                 <a class="nav-link active line" aria-current="page" href="#">
-                  Feedback
+                  Feedbacks
                 </a></Link>
             </ul>
             <div class="dropdown">

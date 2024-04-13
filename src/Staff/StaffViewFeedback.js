@@ -48,7 +48,7 @@ function StaffViewFeedback() {
                   <td>{value.studid.firstname} </td>
                   <td>{value.studid.lastname} </td>
                   <td>{value.feedback}</td>
-                  <td>{value.Date}</td>
+                  <td>{value.date}</td>
                   
                 </tr>
               </tbody>
