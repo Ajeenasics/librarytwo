@@ -59,7 +59,7 @@ useEffect(() => {
 
 <div class="Sfeedborder">
             <h2 class="Sfeedbkhead">STUDENT FEEDBACK FORM</h2><br/>
-            <p>Name: {data.firstname}</p>
+            <p>Name: {data.firstname} {data.lastname}</p>
             <p>Name: {data.rollno}</p>
 
             
