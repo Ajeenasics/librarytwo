@@ -73,11 +73,7 @@ function NavBar() {
                     Profile
                   </a></Link>
                 </li>
-                <li>
-                  <a href="#" class="dropdown-item">
-                    Settings
-                  </a>
-                </li>
+                
                 <li>
                   <hr class="dropdown-divider"></hr>
                 </li>

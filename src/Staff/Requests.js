@@ -7,6 +7,10 @@ import { Link, useNavigate } from "react-router-dom";
 function Requests() {
   const navigate = useNavigate();
   const [approv, setApprove] = useState([]);
+  useEffect(() => {
+    approve();
+  }, [approv]);
+
 
   const acceptBook = async (id) => {
     try {
@@ -22,9 +26,9 @@ function Requests() {
     }
   };
 
-  const approve = (id) => {
+  const approve = () => {
     axios
-      .get(`http://localhost:4000/notapprove/${id}`)
+      .get(`http://localhost:4000/notapprove`)
       .then((res) => {
         console.log(res.data.data);
         setApprove(res.data.data);
@@ -34,19 +38,17 @@ function Requests() {
       });
   };
 
-  useEffect(() => {
-    approve();
-  }, []);
 
-  // const rejectBorrow=(id)=>{
-  //   axios.post(`http://localhost:4000/deleteborrow/${id}`).then((res)=>{
-  //     console.log(res.data)
-  //     alert("borrow delete successfully")
-  //   })
-  //   .catch((err)=>{
-  //     console.log(err.err);
-  //   })
-  // }
+
+   const rejectBorrow=(bid)=>{
+    axios.post(`http://localhost:4000/deleteborrow/${bid}`).then((res)=>{
+      console.log(res.data)
+      alert("borrow deleted")
+    })
+    .catch((err)=>{
+      console.log(err.err);
+    })
+  }
 
   return (
     <div>
@@ -98,7 +100,7 @@ function Requests() {
                       type="button"
                       style={{ borderRadius: "50%" }}
                       className="btn btn-danger"
-                      // onClick={rejectBorrow(value._id)}
+                      onClick={()=>rejectBorrow(value._id)}
                     >
                       Reject
                     </button>

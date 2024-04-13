@@ -24,14 +24,17 @@ function Sbookdetails() {
    
   const borrowbook=(bookid)=>{
     
-console.log("data",task);      
+console.log("data",task);
+task.bookid=bookid    
+task.studid=localStorage.getItem('studentid')
+task.Date=new Date().toISOString().split('T')[0]
 axios.post('http://localhost:4000/borbook',task).then((response)=>{
 setTask(response)
 console.log(response);
 if (response.data.status == 200) {
   alert("Book Borrowed");
 } else {
-  alert("Book not borrowed");
+  alert("Book already borrowed");
 }
 })
 .catch((err) => {
