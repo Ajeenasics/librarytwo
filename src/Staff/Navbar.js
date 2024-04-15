@@ -4,6 +4,12 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 
 function NavBar() {
+
+  const Logout = () =>{
+    localStorage.clear();
+  }
+
+
   return (
     <div>
       <nav class="navbar fixed-top navbar-expand-lg bg-body-secondary header">
@@ -77,9 +83,9 @@ function NavBar() {
                 <li>
                   <hr class="dropdown-divider"></hr>
                 </li>
-                <Link to={'/'} style={{textDecoration:"none"}}>
+                <Link to={'/'} style={{textDecoration:"none"}} >
                 <li>
-                  <a href="#" class="dropdown-item">
+                  <a href="#" class="dropdown-item" onClick={Logout}>
                     Logout
                   </a>
                 </li>

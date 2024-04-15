@@ -28,7 +28,7 @@ function StaffViewFeedback() {
 
 
       <div className="container">
-      <h2 className="text-center">All Feedbacks</h2>
+      <h2 className="text-move">All Feedbacks</h2>
       <div className="row">
         <div className="col-12">
           <table className="table">
@@ -38,7 +38,6 @@ function StaffViewFeedback() {
                 <th scope="col">First Name</th>
                 <th scope="col">Last Name</th>
                 <th scope="col">Feedback</th>
-                <th scope="col">Date</th>
               </tr>
             </thead>
             {feed.map((value, index) => (
@@ -48,7 +47,6 @@ function StaffViewFeedback() {
                   <td>{value.studid.firstname} </td>
                   <td>{value.studid.lastname} </td>
                   <td>{value.feedback}</td>
-                  <td>{value.date}</td>
                   
                 </tr>
               </tbody>
